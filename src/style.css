@@ -1,0 +1,99 @@
+table{
+    width: 150px;
+    height: 150px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#text2{
+    margin: 40px;
+}
+
+
+/*SECTION FOR ACTION BUTTONS*/
+.start_button{
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #1be3a7;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.start_button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.start_button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.start_button:hover span{
+    padding-right: 25px;
+}
+
+.start_button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+.noHover{
+    pointer-events: none;
+    background-color: #6a9c81;
+}
+/*ACTION BUTTONS END*/
+
+
+
+
+#text3{
+    border: 5px solid black;
+    width: 75px;
+    height: 75px;
+    left: 200px;
+    bottom: 80px;
+    position: relative;
+}
+
+
+.dual-ring {
+    display: none;
+    width: 30px;
+    height: 30px;
+  }
+  .dual-ring:after {
+    content: " ";
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 4px;
+    border-radius: 50%;
+    border: 6px solid rgb(12, 176, 122);
+    border-color: rgb(12, 176, 122) transparent rgb(12, 176, 122) transparent;
+    animation: dual-ring 1.2s linear infinite;
+  }
+  @keyframes dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

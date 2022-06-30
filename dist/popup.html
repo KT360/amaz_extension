@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div class="Product-Page" id="Product-Page">
+      <button id="start_button" class="start_button" style="vertical-align: middle;"><span> Analyze </span></button>
+      <div id="warning" style="top: 10px; color: red; width: 100px; height: 50px; left: 200px; display: inline-block;">please navigate to a product to begin</div>
+      <div id="success" style="top: 10px; color: greenyellow; width: 100px; height: 50px; left: 200px; display: none;">successfully generated</div>
+      <div id="dual-ring" class="dual-ring"></div>
+      <canvas id="pieChart" width="300" height="300"></canvas>
+      <div id="text2">Looking at the most recurring terms...</div>
+      <table class="Table">
+        <tr>
+          <th>PROS</th>
+          <th>CONS</th>
+        </tr>
+        <tr>
+          <td>
+            +
+          </td>
+          <td>
+            -
+          </td>
+        </tr>
+        <tr>
+          <td>
+            +
+          </td>
+          <td>
+            -
+          </td>
+        </tr>
+      </table>
+      <div id="text3">AVERAGE TIME OF OWNERSHIP</div>
+      <div id="review">Our review...</div>
+    </div>
+    <div class="Welcom-Page" id="Welcome-Page">
+      Navigate to a product
+    </div>
+    <script type="module" src="/src/content.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
